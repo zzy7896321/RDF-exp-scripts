@@ -6,3 +6,4 @@ SELECT ?v1 ?v2 ?v3 ?v4 ?v5 WHERE {
 	?v3	rev:reviewer	?v4 .
 	?v4 wsdbm:userId ?v5 .
 }
+

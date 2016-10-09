@@ -7,3 +7,4 @@ SELECT ?v1 ?v2 ?v3 ?v4 ?v5 ?v6 WHERE {
 	?v4 wsdbm:purchaseFor ?v5 .
 	?v5	sorg:contentRating	?v6 .
 }
+

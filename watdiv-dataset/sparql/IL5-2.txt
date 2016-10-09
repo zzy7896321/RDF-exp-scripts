@@ -6,3 +6,4 @@ SELECT ?v1 ?v2 ?v3 ?v4 ?v5 WHERE {
 	?v3	wsdbm:friendOf	?v4 .
 	?v4 wsdbm:friendOf ?v5 .
 }
+

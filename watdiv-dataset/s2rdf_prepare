@@ -1,0 +1,9 @@
+#!/bin/bash
+
+BASEDIR=$(cd "`dirname $0`"; pwd)
+. "$BASEDIR/conf.sh"
+
+[ $# -lt 2 ] && echo "usage: $0 <scale> <selUB>" && exit 1
+
+"$BASEDIR/s2rdf_load.sh" $1 $2
+"$BASEDIR/s2rdf_translate.sh" $1 $2

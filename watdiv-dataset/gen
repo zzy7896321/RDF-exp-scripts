@@ -1,0 +1,12 @@
+#!/bin/bash
+
+BASEDIR=$(cd "`dirname $0`"; pwd)
+. "$BASEDIR/conf.sh"
+
+[ $# -lt 1 ] && echo "usage: $0 <scale> [count=5]" && exit 1
+
+SCALE=$1
+COUNT=${2:-5}
+
+"$BASEDIR/gen_data.sh" $SCALE
+"$BASEDIR/gen_queries.sh" $SCALE $COUNT
